@@ -22,7 +22,7 @@ public class FahrenheitToCelsius {
         System.out.println("Enter the number for fahrenhit: ");
         double fahrenhit=input.nextDouble();
         
-        double celsius = ((5/9)*(fahrenhit-32));
+        double celsius = ((5.0/9)*(fahrenhit-32));
         
         System.out.println("fahrenhit"+fahrenhit+"  =celsius"+celsius+"");
     }
