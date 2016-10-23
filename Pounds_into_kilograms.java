@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package area_of_a_hexagon;
+package pounds_into_kilograms;
 
 import java.util.Scanner;
 
@@ -11,21 +11,19 @@ import java.util.Scanner;
  *
  * @author sazzad
  */
-public class Area_of_a_hexagon {
+public class Pounds_into_kilograms {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner input = new Scanner(System.in); 
-        
-        System.out.println("Enter the side: ");
-        double side= input.nextDouble();
-        
-        double Area =((3*Math.pow(3,0.5))/2)*Math.pow(side,2);
-        
-        System.out.printf("The area of the hexagon is %.4f ", +Area);
+         Scanner input = new Scanner(System.in);
+        System.out.println("Enter a number in pounds: ");
+         double pound = input.nextDouble();
+         
+         double kg = pound*0.454;
+         System.out.println(pound+" pounds is  "+kg+" kilograms");
     }
     
 }

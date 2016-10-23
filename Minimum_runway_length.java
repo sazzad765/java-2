@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package area_of_a_hexagon;
+package minimum_runway_length;
 
 import java.util.Scanner;
 
@@ -11,21 +11,22 @@ import java.util.Scanner;
  *
  * @author sazzad
  */
-public class Area_of_a_hexagon {
+public class Minimum_runway_length {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner input = new Scanner(System.in); 
+        Scanner input = new Scanner(System.in);
         
-        System.out.println("Enter the side: ");
-        double side= input.nextDouble();
+        System.out.println("Enter v and a: ");
+        double v = input.nextDouble();
+        double a = input.nextDouble();
         
-        double Area =((3*Math.pow(3,0.5))/2)*Math.pow(side,2);
+        double length = Math.pow(v,2)/(2*a);
         
-        System.out.printf("The area of the hexagon is %.4f ", +Area);
+        System.out.printf("The minimum runway length for this airplane is %.3f", +length);
     }
     
 }

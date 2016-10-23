@@ -3,29 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package area_of_a_hexagon;
-
-import java.util.Scanner;
+package display_table;
 
 /**
  *
  * @author sazzad
  */
-public class Area_of_a_hexagon {
+public class Display_table {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner input = new Scanner(System.in); 
-        
-        System.out.println("Enter the side: ");
-        double side= input.nextDouble();
-        
-        double Area =((3*Math.pow(3,0.5))/2)*Math.pow(side,2);
-        
-        System.out.printf("The area of the hexagon is %.4f ", +Area);
+        System.out.println( "a b pow(a, b)\n" +
+                            "1 2 1\n" +
+                            "2 3 8\n" +
+                            "3 4 81\n" +
+                            "4 5 1024\n" +
+                            "5 6 15625");
     }
     
 }

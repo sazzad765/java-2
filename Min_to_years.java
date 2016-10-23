@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package area_of_a_hexagon;
+package min_to_years;
 
 import java.util.Scanner;
 
@@ -11,21 +11,23 @@ import java.util.Scanner;
  *
  * @author sazzad
  */
-public class Area_of_a_hexagon {
+public class Min_to_years {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner input = new Scanner(System.in); 
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the number of minutes: ");
+        int min= input.nextInt();
         
-        System.out.println("Enter the side: ");
-        double side= input.nextDouble();
+        int years= (((min/60)/24)/365);
+         int day = min % 525600;
+        int days = (day/1440);
+       
         
-        double Area =((3*Math.pow(3,0.5))/2)*Math.pow(side,2);
-        
-        System.out.printf("The area of the hexagon is %.4f ", +Area);
+        System.out.println(min+ " minutes is approximately " +years+" years "+days+" days");
     }
     
 }

@@ -3,29 +3,30 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package area_of_a_hexagon;
+package monetary_units;
 
 import java.util.Scanner;
 
 /**
  *
- * @author sazzad
+ * @author sazza
  */
-public class Area_of_a_hexagon {
+public class Monetary_units {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner input = new Scanner(System.in); 
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter integer number: ");
+        int amount = input.nextInt();
         
-        System.out.println("Enter the side: ");
-        double side= input.nextDouble();
+        int dollars= amount/100;
         
-        double Area =((3*Math.pow(3,0.5))/2)*Math.pow(side,2);
+        int cents = amount %100;
         
-        System.out.printf("The area of the hexagon is %.4f ", +Area);
+        System.out.println("Your amount "+amount+" represents "+dollars+" dollars "+cents +" cents");
     }
     
 }
